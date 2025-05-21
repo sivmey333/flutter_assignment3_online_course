@@ -143,7 +143,11 @@ class _TimePickerContainerState extends State<TimePickerContainer> {
         //width: 140,
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Colors.blue[100],
+          //color: Colors.blue[100],
+          image: const DecorationImage(
+            image: AssetImage('images/time2.jpeg'),
+            fit: BoxFit.cover,
+          ),
           border: Border.all(color: Colors.blue, width: 2),
           borderRadius: BorderRadius.circular(12),
         ),
@@ -152,9 +156,9 @@ class _TimePickerContainerState extends State<TimePickerContainer> {
           children: [
             Text(
               _formatTime(_selectedTime),
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
             ),
-            const Icon(Icons.access_time, size: 20),
+            const Icon(Icons.access_time, size: 30, color: Colors.white,),
           ],
         ),
       ),

@@ -34,7 +34,11 @@ class _CalendarPopupContainerState extends State<CalendarPopupContainer> {
         height: 150,
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: Colors.amber[100],
+          //color: Colors.amber[100],
+          image: const DecorationImage(
+            image: AssetImage('images/date1.avif'),
+            fit: BoxFit.cover,
+          ),
           border: Border.all(color: Colors.amber, width: 2),
           borderRadius: BorderRadius.circular(12),
         ),
@@ -45,9 +49,9 @@ class _CalendarPopupContainerState extends State<CalendarPopupContainer> {
               _selectedDate == null
                   ? 'Select a date'
                   : '${_selectedDate!.day}/${_selectedDate!.month}/${_selectedDate!.year}',
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 18, fontFamily: 'Tagesschrift', fontWeight: FontWeight.bold, color: Color.fromARGB(255, 7, 100, 176)),
             ),
-            const Icon(Icons.calendar_today, size: 20),
+            const Icon(Icons.calendar_today, size: 30 , color: Colors.red,),
           ],
         ),
       ),

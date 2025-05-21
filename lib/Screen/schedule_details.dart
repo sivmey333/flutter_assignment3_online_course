@@ -31,7 +31,9 @@ class _DropUpListScreenState extends State<DropUpListScreen> {
                   'Your Schedule',
                   style: TextStyle(
                     fontSize: 20,
+                    color: Color.fromARGB(255, 7, 75, 131),
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'Angkor',
                   ),
                 ),
                 ElevatedButton(

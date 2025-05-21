@@ -8,28 +8,35 @@ class AddScheduleScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.blue,
-        title: const Text("Add Schedule")),
+      appBar: AppBar(backgroundColor: const Color.fromARGB(255, 34, 162, 132),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text("Add Schedule", style: TextStyle(fontFamily: 'Tagesschrift',color: Colors.white),)),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text('Title'),
+              Text('Title', style: TextStyle(fontFamily: 'Angkor', fontSize: 18),),
               const SizedBox(height: 15),
 
               // Top TextField
               const TextField(
                 decoration: InputDecoration(
                   labelText: 'Enter Title',
+                  labelStyle: TextStyle(fontFamily: 'Tagesschrift', fontSize: 15),
                   border: OutlineInputBorder(),
                 ),
               ),
               const SizedBox(height: 16),
 
               // Date and Time Container Row
-              Text('Set Date and Time'),
+              Text('Set Date and Time', style: TextStyle(fontFamily: 'Angkor', fontSize: 18)),
               const SizedBox(height: 15),
               Container(
 
@@ -50,7 +57,7 @@ class AddScheduleScreen extends StatelessWidget {
               const SizedBox(height: 16),
 
               // Bottom TextField
-              Text('Description'),
+              Text('Description', style: TextStyle(fontFamily: 'Angkor', fontSize: 18)),
               const SizedBox(height: 15),
               const TextField(
       
@@ -58,6 +65,7 @@ class AddScheduleScreen extends StatelessWidget {
                 decoration: InputDecoration(
                 
                   labelText: 'Enter Description',
+                  labelStyle: TextStyle(fontFamily: 'Tagesschrift', fontSize: 15),
                   border: OutlineInputBorder(),
                   alignLabelWithHint: true,
                 ),

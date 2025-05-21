@@ -46,7 +46,7 @@ class _DropUpButtonState extends State<DropUpButton> {
         if (_isMenuVisible)
           Positioned(
             top: -80, // Drop-up position
-            right: 20,
+            right: -20,
             child: Material(
               elevation: 4,
               borderRadius: BorderRadius.circular(4),

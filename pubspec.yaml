@@ -24,6 +24,18 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  assets:
+    - images/datebg.jpg
+    - images/beachbg.jpg
+    - images/clockbg.webp
+    - images/clock.jpg
+    - images/time.jpg
+    - images/time1.jpg
+    - images/time2.jpeg
+    - images/time3.avif
+    - images/time4.jpg
+    - images/note.avif
+    - images/date1.avif
   fonts:
     - family: Angkor
       fonts:

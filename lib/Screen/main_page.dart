@@ -29,7 +29,7 @@ class _MainPageState extends State<MainPage> {
             'Schedule',
             style: TextStyle(
               fontSize: 30,
-              fontFamily: 'Tagesschrift',
+              fontFamily: 'Angkor',
               color: Colors.white, // Required for ShaderMask
             ),
           ),
