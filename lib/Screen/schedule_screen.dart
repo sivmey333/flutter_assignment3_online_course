@@ -8,7 +8,21 @@ class ScheduleScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Schedule'),
+        backgroundColor: const Color.fromARGB(255, 34, 162, 132),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text('My Schedule',
+          style: TextStyle(
+            fontSize: 20,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Tagesschrift',
+          ),
+        ),
       ),
       body: DropUpListScreen(),
     );
